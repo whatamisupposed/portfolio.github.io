@@ -1,0 +1,16 @@
+h1, h2, h3 {
+    margin: 30px 0px;
+}
+div[title] {
+    opacity: 50%;
+}
+p {
+    background-color: lightBlue;
+}
+#myHeader {
+    text-decoration: underline;
+}
+.italics {
+    font-style: italic;
+    color: red;
+}

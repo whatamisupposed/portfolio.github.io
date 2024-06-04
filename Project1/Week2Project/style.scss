@@ -1,0 +1,23 @@
+body {
+    margin: 10px;
+    background-color: aqua;
+}
+.container {
+    width: auto;
+    background-color: aquamarine;
+
+    ol {
+        font-weight: bold;
+    }
+}
+%my-button {
+background-color: rgb(20, 6, 99);
+border-radius: 50%;
+color: aliceblue;
+padding: 20px;
+width: 400px;
+text-align: center;
+height: 200px;
+
+}
+$charcoal: black;

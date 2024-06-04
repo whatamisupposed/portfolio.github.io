@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: azure;
+            animation-name: box;
+            animation-duration: 20s;
+            position: relative;
+        }
+.mybox {
+    width: 100px;
+            height: 100px;
+            background-color: rgb(50, 104, 104);
+            animation-name: mybox;
+            animation-duration: 20s;
+            position: relative;
+            transition: width 2s, height 2s, transform 2s;
+}
+.mybox input, .what input, .box input  {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px; 
+            text-align: center;
+        }
+.mybox:hover {
+    transform: rotate(180deg);
+    width: 200px;
+            height: 200px;
+}
+.what {
+    width: 100px;
+            height: 100px;
+            background-color: rgb(147, 253, 253);
+            animation-name: what;
+            animation-duration: 20s;
+            position: relative;
+}
+        @keyframes box {
+            0% {left: 0px; top: 0px;}
+            50% {right: 300px; bottom: 200px; background-color: blueviolet;}
+            55% {right: 400px; bottom: 300px; background-color: rgb(66, 3, 126);}
+            100% {background-color: blue; left: 10px; top: 20px;}
+        }
+        @keyframes mybox {
+      0% {right: 0px; top: 0px;}
+      50% {left: 25%; top: 50%; background-color: aqua;}
+      60% {left: 30%; top: 60%; background-color: aquamarine;}
+      70% {left: 40%; top: 70%; background-color: rgb(91, 173, 146);}
+      100% {left: 80%; top: 0%; background-color: aquamarine;}
+        }
+        @keyframes what {
+            0% {left: 50%; top: 0px;}
+            50% {right: 0px; bottom: 200px; background-color: rgb(148, 11, 34);}
+            55% {right: 0px; bottom: 300px; background-color: rgb(51, 4, 11);}
+            100% {background-color: rgb(240, 13, 62); left: 100px; top: 200px;}
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+<div class="column">
+    <span id="output">0</span>
+    <button onclick="updateNumber(99)">Press me</button>
+</div>
+
+<script>
+    let currentNumber = 0;
+
+    function updateNumber() {
+        currentNumber++;
+        document.getElementById('output').innerText = currentNumber;
+    }
+    function changeColor(color, ...boxIds) {
+            boxIds.forEach(boxId => {
+                const box = document.querySelector(`.${boxId}`);
+                if (box) {
+                    box.style.backgroundColor = color;
+                }
+            });
+        }
+</script>
+<div class="box">
+<span contenteditable="number">2</span>
+<input type="checkbox">
+</div>
+<div class="mybox">
+<span contenteditable="number">3</span>
+<input type="number">
+</div>
+<div class="what">
+<span contenteditable="number">4</span>
+<input type="email">
+</div>
+<span contenteditable="number">5</span>
+<input type="color" oninput="changeColor(this.value, 'box', 'mybox', 'what')">
+</div>
+</body>
+</html>

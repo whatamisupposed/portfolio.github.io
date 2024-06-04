@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Default styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: white;
+        }
+        header {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="mainHeading">Welcome to My Website</h1>
+        <button onclick="changeTextColor()">Change Text Color</button>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <button onclick="changeLineColor()">Change Line Color</button>
+    </header>
+
+    <script>
+        function changeTextColor() {
+            var color = prompt("Enter new text color (e.g., 'red', '#00ff00', 'rgb(0, 0, 255)'): ");
+            document.body.style.color = color;
+        }
+
+        function changeBackgroundColor() {
+            var color = prompt("Enter new background color (e.g., 'red', '#00ff00', 'rgb(0, 0, 255)'): ");
+            document.body.style.backgroundColor = color;
+        }
+
+        function changeLineColor() {
+            var color = prompt("Enter new line color (e.g., 'red', '#00ff00', 'rgb(0, 0, 255)'): ");
+            document.body.style.borderColor = color;
+        }
+    </script>
+</body>
+</html>

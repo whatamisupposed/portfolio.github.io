@@ -1,0 +1,419 @@
+.top {
+  display: flex;
+  align-items: center;
+  background-color: orange; 
+  color: black;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 0;
+}
+.topLogo img {
+  height: 90px;
+  width: auto;
+  margin-left: 5%;
+}
+.nav nav {
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+  margin: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: black; 
+  margin-right: 20px; 
+  text-align: right;
+}
+.background {
+  background-color: #eee; /* Set background color for the background section */
+  padding: 50px; /* Add padding for better spacing */
+}
+.middle {
+  padding: 20px; /* Add padding for better spacing */
+margin-left: 5%;
+}
+
+h2 {
+  font-size: 36px; 
+  font-weight: bold;
+}
+p {
+  font-size: 22px; 
+}
+.threeBox {
+  flex-basis: 30%;
+  text-align: center; 
+  margin-bottom: 20px;
+}
+.threeBox img {
+  object-fit: cover;
+  max-width: 100%; 
+  max-height: 100%;
+  width: 440px; 
+  height: 300px; 
+  display: block; 
+margin: 0 auto; 
+}
+
+.three {
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.recipeBox {
+  background-color: rgb(172, 168, 168);
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+  padding: 20px; 
+}
+h5 {
+  width: 100%;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: -5px;
+ 
+}
+.recipeText {
+  margin-left: 95px;
+}
+.Box {
+  padding: 0;
+  text-align: center; 
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.Box img {
+  
+  height: 250px;
+  width: 370px;
+  display: block;  
+
+  object-fit: cover;
+}
+h6 {
+font-size: 15px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.end h8 {
+
+  font-size: 36px;
+  font-style: bold;
+  padding-top: 200px;
+}
+
+.endBox {
+  background-color: lightgray;
+  text-align: center; 
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.endBox img {
+  object-fit: cover;
+  max-width: 100%; 
+  max-height: 100%;
+  width: 480px; 
+  height: 300px; 
+  display: block; 
+margin: 0 auto; 
+}
+.end {
+  display: block;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.endPic {
+  display: flex;
+  justify-content: space-evenly; 
+}
+.endText {
+  margin-left: 95px;
+}
+.endBox h7 {
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+  .bottom {
+    background-color: orange; 
+    color: black; 
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bottomNav {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+    align-items: center;
+  }
+  .bottomNav a {
+    text-decoration: none;
+    color: #fff; 
+    margin: 0 15px; 
+  }
+
+.intro2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url("../images/bengal-burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 740px;
+}
+.intro {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.callToAction {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  
+  padding: 0px 15px;
+  transition: transform 2s;
+}
+body, html {
+  font-family: "Autumn", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+      .intro h1, .intro2 h1 {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 200px;
+        padding: 10px;
+        font-size: 45px; 
+        color: #000000;
+        background-color: white;
+        background-size: 60px;
+      }
+
+      .firstBox {
+        background-color: rgb(165, 164, 164);
+        margin-left: 0;
+        margin-right: 0;
+        height: 130px;
+        padding-top: 20px;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      h11 {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 20px;
+        margin-left: 70px;
+      }
+      .easyList,
+      .lessList {
+        display: flex;
+        padding-top: 10px;
+        align-items: left;
+      }
+    .easyList h12,
+.lessList h13 {
+  list-style-type: none;
+  margin-left: 90px;
+  padding: 0;
+}
+.Ick {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-left: 210px;
+}
+.Ick3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-left: 210px;
+}
+.Ick2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-left: 200px;
+}
+.videoMaybe {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipeTop {
+  text-align: center;
+  padding: 20px;
+}
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.stars {
+  font-size: 24px;
+  margin-right: 5px;
+  color: #c50f0f;
+}
+.reviewCount {
+  font-size: 18px;
+  color: #000000; 
+  margin-left: 5px;
+}
+.ratingSection {
+  display: flex;
+  align-items: center;
+}
+.propaganda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonSection {
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+}
+.saveButton {
+  background-color: #c50f0f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.saveButton img {
+
+  margin-right: 10px;
+}
+.wallOfText h10 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+ h18 {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.wallOfText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: 40px; 
+}
+.right-list {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  margin-top: 0;
+}
+.left-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 530px;
+}
+.headerTire {
+  margin-top: -20px;
+}
+.right-list ul,
+.left-list ol {
+  list-style-type: none;
+  padding: 0;
+}
+.right-list li,
+.left-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.right-list li::before,
+.left-list li::before {
+  content: '\2022';
+  color: #000;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+}
+.section {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: -200px;
+}
+.greyBox {
+  background-color: rgb(165, 164, 164);
+  padding: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+ h16 {
+  color: #424242;
+  font-weight: bold;
+  padding: 20px;
+}
+.boxOfW {
+  width: 70%;
+  margin: 0 auto;
+}
+.left-list ol {
+  list-style-type: none;
+  padding: 0;
+}
+.left-list ol.numbered-list {
+  list-style-type: none; /* Remove list-style-type */
+  counter-reset: section; /* Reset counter for numbered list */
+}
+
+.left-list ol.numbered-list li {
+  position: relative;
+  counter-increment: section; /* Increment counter for each list item */
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.left-list ol.numbered-list li::before {
+  content: counter(section) ". "; /* Add counter and period after each number */
+  color: #000;
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+}
+

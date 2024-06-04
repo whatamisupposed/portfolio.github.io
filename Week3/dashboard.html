@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css"/>
+</head>
+<body>
+    <div class="sidebar">
+      <div class="person">
+        <img class="avatar" src="anonymous.png" alt="User 1 Avatar">
+        <a href="">Edit Profile</a>
+      </div>
+        <a href="dashboard.html">Home</a>
+        <a href="">Dashboard</a>
+        <a href="">Other</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="top-box"></div>
+      <div class="content">
+        <div class="hoho">
+        <h1>Bulletin Board</h1>
+        <div class="right-content">
+          <div class="button-right">
+            <div class="button-right">
+              <a href="contact.html" class="round-button blue-button">Page 1</a>
+              <a href="about.html" class="round-button blue-button">Page 2</a>
+              <a href="services.html" class="round-button blue-button">Page 3</a>
+    
+          </div>
+          </div>
+    </div>
+
+</div>
+        <div class="graph-container">
+          <div class="graph-box">
+            <a href="https://pixabay.com/images/search/nature">
+                <div class="graph">
+                    <img src="images/brown.jpg" alt="picture">
+                </div>
+                <h5>Places To Visit</h5>
+                <div class="picture">
+                    <img class="avatar" src="anonymous.png" alt="User 1 Avatar">
+                    <p> Lorem, ipsum dolor adipisicing elit.</p>
+                </div>
+            </a>
+        </div>
+        <div class="graph-box">
+          <a href="https://pixabay.com/images/search/nature">
+              <div class="graph">
+                  <img src="images/red.jpg" alt="picture">
+              </div>
+              <h5>Memories</h5>
+              <div class="picture">
+                  <img class="avatar" src="anonymous.png" alt="User 1 Avatar">
+                  <p> Lorem, ipsum dolor adipisicing elit.</p>
+              </div>
+          </a>
+      </div>
+      <div class="graph-box">
+        <a href="https://pixabay.com/images/search/nature">
+            <div class="graph">
+                <img src="images/yellow.jpg" alt="picture">
+            </div>
+            <h5>Other</h5>
+            <div class="picture">
+                <img class="avatar" src="anonymous.png" alt="User 1 Avatar">
+                <p> Lorem, ipsum dolor adipisicing elit.</p>
+            </div>
+        </a>
+    </div>
+    </div>
+
+      <div class="teo-container">
+        <div class="big-box"> <div class="teo-box">
+        <h5>Picture</h5> <img src="images/road.jpg" alt="picture">
+      </div>
+       </div>
+       <div class="teo-box">
+      <h5>Time to travel</h5>
+      Lorem something something
+        
+         <img src="images/color.jpg" alt="picture"></div>
+     
+   
+         <style>
+          weather-boxes {
+            display: flex;
+            flex-direction: column;
+          }
+          .container2 {
+      width: 400px;
+      height: 50px;
+      border: 1px solid black;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .message-box {
+      position: absolute;
+      white-space: nowrap;
+      animation: scrollText 10s linear infinite;
+  }
+
+  @keyframes scrollText {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+      </style>
+      <div class="weather-boxes">
+      <div id="container">
+          <button id="weatherButton">Show Weather</button>
+          <div id="weatherInfo" style="display: none;"></div>
+      </div>
+      <div class="container2">
+          <div class="message-box" id="messageBox"></div>
+      </div>
+    </div>
+     
+      <script>
+          window.alert('hoi boiiis')
+      const messageBox = document.getElementById('messageBox');
+  
+  function addMessage(message) {
+      const newMessage = document.createElement('span');
+      newMessage.textContent = message;
+      messageBox.appendChild(newMessage);
+  }
+  
+  // Add messages
+  addMessage("The weather is a lie. ");
+  addMessage("It sucks always. Stay safe. Stay inside. Play video games.");
+  document.getElementById('weatherButton').addEventListener('click', function() {
+    var weatherInfo = document.getElementById('weatherInfo');
+    if (weatherInfo.style.display === 'none') {
+        showFakeWeather();
+        weatherInfo.style.display = 'block';
+        document.getElementById('weatherButton').innerText = 'Hide Weather';
+    } else {
+        weatherInfo.style.display = 'none';
+        document.getElementById('weatherButton').innerText = 'Show Weather';
+    }
+});
+
+function showFakeWeather() {
+    var fakeWeather = generateFakeWeather();
+    var weatherInfo = document.getElementById('weatherInfo');
+    weatherInfo.innerHTML = `
+        <h77>Fake Weather</h77>
+        <p>Temperature: ${fakeWeather.temperature}°C</p>
+        <p>Weather: ${fakeWeather.weather}</p>
+    `;
+}
+
+function generateFakeWeather() {
+    var temperature = Math.floor(Math.random() * 30) + 10; // Random temperature between 10°C and 39°C
+    var weatherConditions = ['Sunny', 'Cloudy', 'Rainy', 'Stormy'];
+    var randomIndex = Math.floor(Math.random() * weatherConditions.length);
+    var weather = weatherConditions[randomIndex];
+    return {
+        temperature: temperature,
+        weather: weather
+    };
+}
+      </script>
+</div>
+</div>
+  </div>
+      
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.titlebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper {
+    background-color: blue;
+    width: 400px;
+    padding: 15px;
+}

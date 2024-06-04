@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
+body {
+  background-color: rgb(213, 212, 214);
+  margin: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(226, 226, 228);
+  text-align: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.person {
+  width: 95%;
+  margin-top: 100px;
+  margin-left: 10px;
+  z-index: 1;
+  padding-bottom: 30px;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+    width: 100%;
+  }
+  .content {
+    margin-left: 0;
+  }
+}
+.graph-container {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex-wrap: wrap;
+  box-shadow: 1cm;
+}
+
+.graph-box {
+  padding: 5px;
+  background-color: rgb(158, 162, 175);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 0;
+  margin: 0;
+  border-radius: 15px;
+}
+.graph-box h5 {
+  color: black;
+  font-size: large;
+}
+
+.teo-container {
+  margin-top: 60px;
+  background-color: rgb(213, 212, 214);
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex-wrap: wrap;
+  box-shadow: 1cm;
+}
+.teo-container .big-box {
+  width: 300px;
+  height: 400px;
+}
+.teo-container .teo-box {
+  padding: 5px;
+  width: 320px;
+  background-color: rgb(158, 162, 175);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 0;
+  margin: 10px;
+  border-radius: 15px;
+}
+.teo-container .teo-box h5 {
+  color: black;
+  font-size: large;
+}
+
+.graph {
+  margin: 0;
+  height: auto;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Update box-shadow property */
+  justify-content: space-around;
+  display: block;
+  overflow: hidden; /* Add overflow property to prevent extra space */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.graph img {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pic {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.button-right {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.round-button {
+  border-radius: 50%;
+  padding: 10px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.blue-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.green-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.button-right button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-right button:hover {
+  background-color: #2980b9;
+  color: rgb(213, 212, 214);
+}
+
+.hoho {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.hoho h1 {
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  margin-left: 10px;
+}
+.hoho .right-content {
+  display: flex;
+  margin-right: 30px;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+.hoho .right-content h7 {
+  border-radius: 15px;
+  text-decoration: none;
+  align-content: center;
+  width: 90px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: gray;
+  padding-top: 10px;
+  display: block;
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  margin-left: 10%;
+}
+
+h2, h3, h4 {
+  font-size: 50px;
+  margin-left: 50%;
+}
+
+h2 {
+  color: white;
+}
+
+.picture {
+  display: flex;
+  align-items: center; /* Vertically center items in the flex container */
+  margin-bottom: 10px;
+}
+.picture p {
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.picture .avatar-paragraph {
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align text to the left */
+  flex-grow: 1; /* Allow the paragraph to grow and take up available space */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.graph-box a {
+  font-weight: bold;
+}
+
+.teo-box a {
+  font-weight: bold;
+}
+
+.weather-box {
+  padding: 15px;
+  background-color: #71a4c6;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px; /* Adjust the width according to your design */
+}
+
+.temperature {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.unit {
+  font-size: 0.8em;
+}
+
+.top-box {
+  background-color: #6d6c72; /* Gray color */
+  border-radius: 15px; /* Adjust the border-radius for round ends */
+  height: 500px; /* Adjust the height as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}/*# sourceMappingURL=dashboard.css.map */
